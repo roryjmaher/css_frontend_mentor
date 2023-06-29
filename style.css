@@ -32,13 +32,16 @@ img {
   margin: 3rem 0rem;
   text-align: center;
   text-decoration: underline;
-}
-
-a:visited {
   color: var(--white-text);
 }
 
-a:hover {
+a:visited,
+.title-header:visited {
+  color: var(--white-text);
+}
+
+a:hover,
+.title-header:hover {
   color: var(--white-text-hover);
 }
 
