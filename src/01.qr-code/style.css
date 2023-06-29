@@ -10,8 +10,13 @@
 /* CSS Variables */
 :root {
   --dark-blue: #1f3251;
+  --dark-blue-hover: hsl(217, 45%, 32%);
+
   --light-blue: #d6e2f0;
   --slate-grey: #7b879d;
+
+  --white-text: hsl(0, 0%, 100%);
+  --white-text-hover: hsl(0, 0%, 90%);
 }
 
 body {
@@ -51,9 +56,29 @@ img {
   border-radius: 0.938rem;
 }
 
+.homelink {
+  display: block;
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+  padding: 0.325rem 0.625rem;
+  background: var(--dark-blue);
+  text-decoration: none;
+  color: var(--white-text);
+}
+
+.lomelink:hover {
+  background-color: hsl(--dark-blue-hover);
+  color: hsl(--white-text-hover);
+}
+
+.homelink:visited {
+  color: var(--white-text);
+}
+
 .card {
   margin: 1em;
-  background: white;
+  background: var(--white-text);
   border-radius: 1em;
   padding: 1.2em;
   box-shadow: 1px 9px 12px -4px rgba(0, 0, 0, 0.57);
