@@ -52,6 +52,7 @@ img {
 }
 
 .card {
+  margin: 1em;
   background: white;
   border-radius: 1em;
   padding: 1.2em;
